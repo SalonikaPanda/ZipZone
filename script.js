@@ -1,6 +1,7 @@
 const zip = document.getElementById("zip");
 let ResultContainer = document.getElementById("SearchResult");
 async function getArea() {
+    ResultContainer.classList.remove("errorBox")
     const zipInput = zip.value;
     const url = `https://api.zippopotam.us/in/${zipInput}`;
     try {
